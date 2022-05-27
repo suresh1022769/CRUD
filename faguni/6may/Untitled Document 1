@@ -1,0 +1,68 @@
+	git add  module/Institution/src/Controller/AjaxInstitutionController.php
+	git add  module/Wil/src/Controller/AjaxController.php
+	git add  module/Wil/view/wil/ajax/academic-assessment.phtml
+	git add  module/Wil/view/wil/ajax/academic-outcome-assessment.phtml
+	git add  module/Wil/view/wil/ajax/mentor-assessment.phtml
+	git add  module/Wil/view/wil/ajax/mentor-outcome-assessment.phtml
+	git add  module/Wil/view/wil/assessment/assessment-summary-sheet-student.phtml
+
+
+
+electrical engineering
+
+pass:-Ots@2022
+
+
+
+220332225     MR. TSHWARELO MODIGA     18-02-2000     vincent4modiga@gmail.com 
+
+219107234    MR. JAFTA MAILE           06-02-2000     jpmaile09@gmail.com
+
+219243723    MR. DONALD NEMBUDANI      02-02-2000     rosinah.nembudani@gmail.com  emp:-SS Group     mentor:-james@gmail.com
+
+218715320    MR. HEZEKIEL MOKGOPHA MODJELA   06-02-2000   sekielmodjela@gmail.com  emp:-SS Group     mentor:-james@gmail.com
+
+
+
+$qualification_ids = implode(",", array_filter(array_unique(array_column($primaryAcademicQualiData, 'q_id'))));
+
+
+<?php $count=0; 
+//    if($this->output->wildetail>0) { 
+        foreach($this->output->wilAllData as $detail) {?>        
+            <p style="font-size:28px;padding-top:200px;">WIL MODULE NAME : <?php echo strtoupper($this->output->wildetail[$count]['wilname']);?></p>
+            
+            
+            
+            
+    <?php $count++;} ?> 
+    <?php $count=0; 
+//    if($this->output->wildetail>0) { 
+        foreach($this->output->wilAllData as $detail) {?>        
+           
+            
+            <?php 
+            echo '<pre>';print_r($detail); die; 
+            foreach ($detail['outcome'] as $value) {
+                
+                <p style="font-size:28px;padding-top:200px;">WIL MODULE NAME : <?php echo strtoupper($this->output->wildetail[$count]['wilname']);?></p>
+                
+    
+} ?>
+            
+            
+    <?php $count++;} ?> 
+            
+            
+            
+            
+<?php //echo"<pre>"; print_r($this->output->qualificationsData); die;?>
+
+
+
+	git add  module/Institution/src/Controller/AjaxInstitutionController.php
+	git add  module/Institution/src/Entity/Read/ROutcomes.php
+	git add  module/Institution/view/institution/ajax-institution/qualification-details-pdf-new_faguni.phtml
+
+
+

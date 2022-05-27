@@ -1,0 +1,40 @@
+	
+
+INSERT INTO `tbl_actions` (`a_c_id`, `a_name`, `a_label`, `a_status_9`, `a_status`, `a_is_ajax`, `a_is_public`) VALUES ('111', 'uploadMentorVisitationSignedDoc', 'uploadMentorVisitationSignedDoc', '0', '3', '0', '0');
+
+INSERT INTO `tbl_user_default_access` (`u_d_a_type_id`, `u_d_a_a_l_id`, `u_d_a_status`) VALUES ('11', '770', '1');
+
+ALTER TABLE `tbl_visitation_users` ADD COLUMN `v_u_m_attachment` VARCHAR(155) NULL AFTER `v_u_e_date`, CHANGE COLUMN `v_u_attachment` `v_u_attachment` VARCHAR(155) NULL DEFAULT NULL ;
+
+ALTER TABLE `tbl_visitation_users` 
+ADD COLUMN `v_u_m_attachment_uploaded_date` DATE NULL AFTER `v_u_m_attachment`,
+ADD COLUMN `v_u_m_attachment_uploaded_by` INT UNSIGNED NULL AFTER `v_u_m_attachment_uploaded_date`;
+
+INSERT INTO `tbl_actions` (`a_c_id`, `a_name`, `a_label`, `a_status_9`, `a_status`, `a_is_ajax`, `a_is_public`) VALUES ('111', 'uploadEmployerVisitationSignedDoc', 'uploadEmployerVisitationSignedDoc', '0', '3', '0', '0');
+
+
+INSERT INTO `tbl_user_default_access` (`u_d_a_type_id`, `u_d_a_a_l_id`, `u_d_a_status`) VALUES ('11', '771', '1');
+
+ALTER TABLE `tbl_visitation_users` 
+ADD COLUMN `v_u_e_attachment` VARCHAR(155) NULL AFTER `v_u_m_attachment_uploaded_by`,
+ADD COLUMN `v_u_e_attachment_uploaded_by` INT UNSIGNED NULL AFTER `v_u_e_attachment`,
+ADD COLUMN `v_u_e_attachment_uploaded_date` DATE NULL AFTER `v_u_e_attachment_uploaded_by`;
+
+********10 MAY 2022*******************	
+
+INSERT INTO `tbl_actions` (`a_c_id`, `a_name`, `a_label`, `a_status_9`, `a_status`, `a_is_ajax`, `a_is_public`) VALUES ('81', 'employerBlankOnsiteAssessmentPdf', 'employerBlankOnsiteAssessmentPdf', '0', '1', '0', '0');
+INSERT INTO `tbl_actions` (`a_c_id`, `a_name`, `a_label`, `a_status_9`, `a_status`, `a_is_ajax`, `a_is_public`) VALUES ('81', 'downloadEmployerBlankOnsiteAssessmentPdf', 'downloadEmployerBlankOnsiteAssessmentPdf', '0', '1', '0', '0');
+
+
+INSERT INTO `tbl_actions` (`a_c_id`, `a_name`, `a_label`, `a_status_9`, `a_status`, `a_is_ajax`, `a_is_public`) VALUES ('81', 'mentorBlankOnsiteAssessmentPdf', 'mentorBlankOnsiteAssessmentPdf', '0', '1', '0', '0');
+INSERT INTO `tbl_actions` (`a_c_id`, `a_name`, `a_label`, `a_status_9`, `a_status`, `a_is_ajax`, `a_is_public`) VALUES ('81', 'downloadMentorBlankOnsiteAssessmentPdf', 'downloadMentorBlankOnsiteAssessmentPdf', '0', '1', '0', '0');
+
+
+
+ALTER TABLE `tbl_visitation_users` 
+ADD COLUMN `v_u_stu_attachment_uploaded_by` INT UNSIGNED NULL AFTER `v_u_e_attachment_uploaded_date`,
+ADD COLUMN `v_u_stu_attachment_uploaded_date` DATE NULL AFTER `v_u_stu_attachment_uploaded_by`;
+
+
+
+

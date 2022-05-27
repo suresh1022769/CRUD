@@ -1,0 +1,49 @@
+steps for wil project:
+
+
+
+1 . first import qualification from super admin,
+2. import subject from super admin
+
+3. then from qsm creare wil
+4 . add assessment criteria 
+5 . add outcome
+6 . add wil ready criteria
+
+
+
+7 . then in qualification list request for approval
+
+
+8 . then approve qualification from super admin ====> http://wil.local/all-qualification-list/5 (approve button)
+    
+    http://wil.local/qualification-approval-list/1 wil open 
+    
+    then first approve all subjects
+    
+    then approve wil button click   =>http://wil.local/wil-approval-list/1 wil opens
+    
+    then approve all the childs of wil 
+    
+    
+    
+    
+9.  when u approve the qualification ,it wil show in live-qualifications from qsm.
+
+
+10.   then login from academic assessor and add a student for that approved qualification.
+      then change  wil ready status fron student list for academic
+      
+11.    then login from that student and complete step 1 to 10 
+
+
+12.  then from academic assessor  approve employer ,mentor,workstation if student take new  employer ,mentor,workstation.. 
+	this will be done from http://wil.local/wil-reg-pending-approval-list 
+	then approve student for wil (wil approve)
+
+13.     then from student add task report (complete steps )
+	
+	
+
+
+
